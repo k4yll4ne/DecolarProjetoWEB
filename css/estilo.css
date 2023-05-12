@@ -1,0 +1,127 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+:root{
+    --cor-roxo-escuro:#270570;
+    --cor-roxo-medio:#A780FF;
+    --cor-cinza: #444444;
+    --cor-cinza-claro: #EEEEEE;
+    --fonte: 'Rubik', sans-serif;
+}
+
+body{
+    font-family: var(--fonte);
+}
+.menu-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+}
+  
+.logo {
+    width: 120px;
+}
+
+
+.menu2{
+    background-color: var(--cor-roxo-escuro);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.menu-principal a:hover {
+    border-bottom: 2px solid var(--cor-roxo-escuro);
+    transform: scale(105%);
+}
+
+.menu2 ul,
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu2 li,
+.menu-principal li {
+    margin: 0 10px;
+}
+  
+.menu2 a,
+.menu-principal a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-size: 14px;
+}
+  
+.menu2 img,
+.menu-principal img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+  
+.menu2 h3,
+.menu-principal h3 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+}
+
+.menu2 h3{
+    color: white;
+}
+.menu-principal li {
+    margin: 0 25px;
+}
+  
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-roxo-medio);
+    height: 40vh;
+    margin-bottom: 0;
+}
+
+.bloco {
+    background-color: var(--cor-roxo-escuro);
+    border-radius: 10px;
+    width: 70%;
+    height: 80%;
+    margin: 0;
+  }
+
+#sessao2{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-cinza-claro);
+    height: 80vh;
+}
+  
+.bloco2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 0;
+}
+
+.bloco2 img{
+    width: 80%;
+
+}
