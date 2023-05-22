@@ -125,3 +125,35 @@ body{
     width: 80%;
 
 }
+
+.conteudo{
+    color: white;
+}
+input{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.icon{
+    width: 30px;
+}
+
+.botao-vermelho{
+    background-color: rgb(211, 42, 42);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.item{
+    background-color: var(--cor-roxo-medio);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    
+}
