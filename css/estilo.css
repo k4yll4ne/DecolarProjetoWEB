@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
 }
+
 :root{
     --cor-roxo-escuro:#270570;
     --cor-roxo-medio:#A780FF;
@@ -12,67 +13,71 @@
 
 body{
     font-family: var(--fonte);
+    background-color: var(--cor-cinza-claro);
 }
+
+/* ESTILIZAÇÃO - HEADER */
+
 .menu-logo {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
-    padding: 20px 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    background-color: white;
     height: 80px;
 }
-  
+
 .logo {
-    width: 120px;
+    width: 120px; /* Define o tamanho da logo */
 }
 
-
 .menu2{
-    background-color: var(--cor-roxo-escuro);
+    background-color: var(--cor-roxo-escuro); /* estiliza o menuzinho direito */
     color: white;
     padding: 10px;
     border-radius: 10px;
-    
 }
 
 .menu-principal a:hover {
     border-bottom: 2px solid var(--cor-roxo-escuro);
+}
+
+.menu2 a:hover {
     transform: scale(105%);
 }
 
 .menu2 ul,
 .menu-principal ul {
-    display: flex;
+    display: flex;  /* deixa o menu na horizontal */
     list-style: none;
     margin: 0;
     padding: 0;
 }
-  
+
 .menu2 li,
 .menu-principal li {
-    margin: 0 10px;
+    margin: 0 10px; /* os itens de lista não ficam grudados */
 }
-  
+
 .menu2 a,
 .menu-principal a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* sobe a imagem */
+    justify-content: center;  
     align-items: center;
     text-decoration: none;
     color: var(--cor-cinza);
     font-size: 14px;
 }
-  
+
+.menu2 a{
+    flex-direction: row;
+}
+
 .menu2 img,
 .menu-principal img {
     width: 30px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
   
 .menu2 h3,
@@ -85,53 +90,33 @@ body{
 .menu2 h3{
     color: white;
 }
+
 .menu-principal li {
-    margin: 0 25px;
+    margin: 0 25px; /* separando elementos do menu (horizontalmente) */
 }
-  
+
+/* ESTILIZAÇÃO - MAIN */
+
+/*  section topicos */
+
 .conteudo{
-    display: flex;
+    display: flex; /* centraliza a div bloco */
     justify-content: center;
     align-items: center;
     background-color: var(--cor-roxo-medio);
-    height: 40vh;
-    margin-bottom: 0;
+    height: 25vh;
+    border-bottom: 2px solid #d0d0d0;
 }
 
 .bloco {
-    background-color: var(--cor-roxo-escuro);
+    background-color: var(--cor-roxo-escuro); /* define o tamanho da div bloco */
     border-radius: 10px;
     width: 70%;
     height: 80%;
-    margin: 0;
-  }
-
-#sessao2{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--cor-cinza-claro);
-    height: 80vh;
-}
-  
-.bloco2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60vh;
-    margin-bottom: 0;
-}
-
-.bloco2 img{
-    width: 80%;
-
 }
 
 .conteudo{
     color: white;
-}
-input{
-    padding: 15px;
-    border-radius: 10px;
 }
 
 .icon{
@@ -139,21 +124,189 @@ input{
 }
 
 .botao-vermelho{
-    background-color: rgb(211, 42, 42);
-    padding: 25px;
-    border-radius: 10px;
+    background-color: #d32a2a;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
-.item{
-    background-color: var(--cor-roxo-medio);
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
+.botao-vermelho:hover{
+    background-color: #ab1d1d;
 }
 
-
-.informacoes{
+form{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    outline: unset;
+    padding: 15px;
+    border: 2px solid #5e32bb;
+    border-radius: 10px;
+    background-color: var(--cor-cinza-claro);
+}
+
+select{
+    outline: unset;
+    padding: 15px;
+    border: 2px solid #5e32bb;
+    border-radius: 10px;
+    color: var(--cor-cinza);
+    background-color: var(--cor-cinza-claro);
+}
+
+label{
+    position: relative;
+    margin: 8px;
+}
+
+label > input,
+label > select {
+  padding-top: 20px; 
+}
+
+label > span {
+    position: absolute; /* texto dentro do input */
+    margin: 8px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--cor-cinza);
+    top: 0;
+    left: 0;
+}
+
+form input:focus, form select:focus{
+    background-color: #dadada;
+}
+
+#psgs-aereas{
+    margin-bottom: 20px;
+}
+
+#topicos{
+    padding: 50px 165px;
+    display: flex;
+    border-bottom: 2px solid #8766d2;
+}
+
+.botao-roxo{
+    background-color: var(--cor-roxo-escuro);
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.botao-roxo:hover{
+    background-color: #170245;
+}
+
+#topicos img{
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.menor{
+    width: 300px;
+}
+
+.destino{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section informacoes */
+
+.item{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.item h3{
+    text-transform: uppercase;
+    margin-bottom: 5px;
     
+}
+
+.informacoes{
+    background-color: var(--cor-roxo-medio);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+#coluna{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#atencaoperso{
+    display: flex;
+    background-color: var(--cor-cinza-claro);
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ESTILIZAÇÃO - FOOTER */
+
+#rodape{
+    background-color: var(--cor-cinza-claro);
+    box-shadow: 0 -4px 4px rgba(0 0 0, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: var(--cor-cinza);
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociais a{
+    margin: 5px;
 }
