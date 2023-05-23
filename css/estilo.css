@@ -4,8 +4,8 @@
 }
 
 :root{
-    --cor-roxo-escuro:#270570;
-    --cor-roxo-medio:#A780FF;
+    --cor-azul-escuro:#5c86b7;
+    --cor-azul-medio:#0096db;
     --cor-cinza: #444444;
     --cor-cinza-claro: #EEEEEE;
     --fonte: 'Rubik', sans-serif;
@@ -20,7 +20,7 @@ body{
 
 .menu-logo {
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
     padding: 15px 0;
     background-color: white;
@@ -52,6 +52,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 .menu2 li,
@@ -88,7 +89,7 @@ body{
 }
 
 .menu2 h3{
-    color: white;
+    color: black;
 }
 
 .menu-principal li {
@@ -103,16 +104,16 @@ body{
     display: flex; /* centraliza a div bloco */
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-roxo-medio);
+    background-color: #1a7f50;
     height: 25vh;
     border-bottom: 2px solid #d0d0d0;
 }
 
 .bloco {
-    background-color: var(--cor-roxo-escuro); /* define o tamanho da div bloco */
+    background-color: #e18599; /* define o tamanho da div bloco */
     border-radius: 10px;
-    width: 70%;
-    height: 80%;
+    width: 85%;
+    height: 90%;
 }
 
 .conteudo{
@@ -124,7 +125,7 @@ body{
 }
 
 .botao-vermelho{
-    background-color: #d32a2a;
+    background-color: #809f84;
     padding: 10px 15px;
     font-size: 15px;
     border-radius: 30px;
@@ -136,7 +137,7 @@ body{
 }
 
 .botao-vermelho:hover{
-    background-color: #ab1d1d;
+    background-color: #657e69;
 }
 
 form{
@@ -154,7 +155,7 @@ form{
 form input{
     outline: unset;
     padding: 15px;
-    border: 2px solid #5e32bb;
+    border: 2px solid #1a7f50b3;
     border-radius: 10px;
     background-color: var(--cor-cinza-claro);
 }
@@ -162,7 +163,7 @@ form input{
 select{
     outline: unset;
     padding: 15px;
-    border: 2px solid #5e32bb;
+    border: 2px solid #1a7f50b3;
     border-radius: 10px;
     color: var(--cor-cinza);
     background-color: var(--cor-cinza-claro);
@@ -197,8 +198,9 @@ form input:focus, form select:focus{
 }
 
 #topicos{
-    padding: 50px 165px;
+    padding: 50px 90px;
     display: flex;
+    justify-content: space-around;
     border-bottom: 2px solid #8766d2;
 }
 
