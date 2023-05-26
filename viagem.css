@@ -1,0 +1,102 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root{
+    --cor-rosa: #e18599;
+    --cor-verde: #1a7f50;
+    --cor-cinza: #444444;
+    --cor-cinza-claro: #fcfbfb;
+    --fonte: 'Rubik', sans-serif;
+}
+
+body{
+    font-family: var(--fonte);
+    background-color: var(--cor-cinza-claro);
+}
+
+/* ESTILIZAÇÃO - HEADER */
+
+.menu-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: white;
+    height: 80px;
+}
+
+.logo {
+    width: 220px; /* Define o tamanho da logo */
+}
+
+.menu2{
+    background-color: var(--cor-verde); /* estiliza o menuzinho direito */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-principal a:hover {
+    transform: scale(105%);
+}
+
+.menu2 a:hover {
+    transform: scale(105%);
+}
+
+.menu2 ul,
+.menu-principal ul {
+    display: flex;  /* deixa o menu na horizontal */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.menu2 li,
+.menu-principal li {
+    margin: 0 10px; /* os itens de lista não ficam grudados */
+}
+
+.menu2 a,
+.menu-principal a {
+    display: flex;
+    flex-direction: column; /* sobe a imagem */
+    justify-content: center;  
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-size: 14px;
+}
+
+.menu2 a{
+    flex-direction: row;
+}
+
+.menu2 img,
+.menu-principal img {
+    width: 30px;
+    margin: 5px;
+}
+  
+.menu2 h3,
+.menu-principal h3 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+}
+
+.menu2 h3{
+    color: rgb(255, 255, 255);
+    font-weight:500;
+}
+
+.menu-principal li {
+    margin: 0 25px; /* separando elementos do menu (horizontalmente) */
+}
+
+/* ESTILIZAÇÃO - MAIN */
+
+/*  section topicos */
