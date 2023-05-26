@@ -9,7 +9,7 @@
 
 body{
     font-family: var(--fonte);
-    background-color: #11998e;
+    background-color: #57c793;
 }
 
 /* ESTILIZAÇÃO - HEADER */
@@ -131,8 +131,9 @@ form{
 input{
     background: none;
     border: none;
-    border-bottom: 1px solid #11998e;
+    border-bottom: 1px solid #f09cae;
     width: 50%;
+    margin-top: 3%;
 }
 
 input:focus{
@@ -144,5 +145,20 @@ input:focus{
     width: 60%;
     height: 30px;
     border-radius: 5px;
-    background-color: #11998e;
+    background-color: #f09cae;
+}
+
+.termos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -6%;
+}
+
+.termos label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

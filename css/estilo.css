@@ -7,7 +7,7 @@
     --cor-rosa: #e18599;
     --cor-verde: #1a7f50;
     --cor-cinza: #444444;
-    --cor-cinza-claro: #EEEEEE;
+    --cor-cinza-claro: #fcfbfb;
     --fonte: 'Rubik', sans-serif;
 }
 
@@ -28,7 +28,7 @@ body{
 }
 
 .logo {
-    width: 120px; /* Define o tamanho da logo */
+    width: 220px; /* Define o tamanho da logo */
 }
 
 .menu2{
@@ -250,6 +250,7 @@ form input:focus, form select:focus{
 .item{
     padding: 15px;
     margin: 5px;
+    width: 22%;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: var(--cor-rosa);
@@ -257,7 +258,11 @@ form input:focus, form select:focus{
 
 .item h3{
     text-transform: uppercase;
-    margin-bottom: 5px;
+    height: 20%;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -272,7 +277,8 @@ form input:focus, form select:focus{
 #coluna{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    justify-content: center;
+    margin: 5%;
 }
 
 #atencaoperso{
@@ -304,4 +310,30 @@ form input:focus, form select:focus{
 
 .redes-sociais a{
     margin: 5px;
+} 
+
+.caracteristicas{
+    border-bottom: 2px solid #64e2a7;
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.caracteristicas-itens{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+
+.caracteristicas-itens div{
+    margin: 1.5%;
+}
+.caracteristicas-itens div h2{
+    text-align: center;
+    margin-bottom: 5%; 
+    margin-left: -20%;
 }

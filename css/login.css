@@ -9,7 +9,7 @@
 
 body{
     font-family: var(--fonte);
-    background-color: #11998e;
+    background-color: #57c793;
 }
 
 /* ESTILIZAÇÃO - HEADER */
@@ -124,14 +124,14 @@ form{
 #user-icon{
     padding: 2%;
     width: 18%;
-    background-color: #11998e;
+    background-color: #f09cae;
     border-radius: 100%;
 }
 
 input{
     background: none;
     border: none;
-    border-bottom: 1px solid #11998e;
+    border-bottom: 1px solid #e18599;
     width: 50%;
 }
 
@@ -144,5 +144,5 @@ input:focus{
     width: 60%;
     height: 30px;
     border-radius: 5px;
-    background-color: #11998e;
+    background-color: #f09cae;
 }
