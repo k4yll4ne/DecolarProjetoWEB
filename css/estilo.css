@@ -4,8 +4,8 @@
 }
 
 :root{
-    --cor-azul-escuro:#5c86b7;
-    --cor-azul-medio:#0096db;
+    --cor-rosa: #e18599;
+    --cor-verde: #1a7f50;
     --cor-cinza: #444444;
     --cor-cinza-claro: #EEEEEE;
     --fonte: 'Rubik', sans-serif;
@@ -32,14 +32,14 @@ body{
 }
 
 .menu2{
-    background-color: var(--cor-roxo-escuro); /* estiliza o menuzinho direito */
+    background-color: var(--cor-verde); /* estiliza o menuzinho direito */
     color: white;
     padding: 10px;
     border-radius: 10px;
 }
 
 .menu-principal a:hover {
-    border-bottom: 2px solid var(--cor-roxo-escuro);
+    transform: scale(105%);
 }
 
 .menu2 a:hover {
@@ -89,7 +89,8 @@ body{
 }
 
 .menu2 h3{
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight:500;
 }
 
 .menu-principal li {
@@ -198,14 +199,17 @@ form input:focus, form select:focus{
 }
 
 #topicos{
-    padding: 50px 90px;
+    padding: 40px 0;
+    width: 60%;
+    height: 45vh;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 2px solid #8766d2;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(139, 139, 139);
 }
 
 .botao-roxo{
-    background-color: var(--cor-roxo-escuro);
+    background-color: var(--cor-rosa);
     padding: 10px 15px;
     margin: 5px;
     font-size: 15px;
@@ -216,7 +220,7 @@ form input:focus, form select:focus{
 }
 
 .botao-roxo:hover{
-    background-color: #170245;
+    background-color: #c27284;
 }
 
 #topicos img{
@@ -228,7 +232,7 @@ form input:focus, form select:focus{
     width: 300px;
 }
 
-.destino{
+.topic-itens{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 15px;
@@ -240,17 +244,6 @@ form input:focus, form select:focus{
     align-items: center;
 }
 
-.ofertas{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 500px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* section informacoes */
 
@@ -259,7 +252,7 @@ form input:focus, form select:focus{
     margin: 5px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: white;
+    background-color: var(--cor-rosa);
 }
 
 .item h3{
@@ -269,12 +262,11 @@ form input:focus, form select:focus{
 }
 
 .informacoes{
-    background-color: var(--cor-roxo-medio);
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    border-bottom: 2px solid #d6d6d6;
+    padding: 40px;
 }
 
 #coluna{
@@ -285,7 +277,7 @@ form input:focus, form select:focus{
 
 #atencaoperso{
     display: flex;
-    background-color: var(--cor-cinza-claro);
+    background-color: #d0d0d0;
     padding: 20px;
     border-radius: 15px;
     align-items: center;
@@ -295,13 +287,14 @@ form input:focus, form select:focus{
 /* ESTILIZAÇÃO - FOOTER */
 
 #rodape{
-    background-color: var(--cor-cinza-claro);
+    background-color: #d0d0d0;
     box-shadow: 0 -4px 4px rgba(0 0 0, .5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     color: var(--cor-cinza);
+    border-top: 2px solid #c7c7c7;
 }
 
 .redes-sociais{
