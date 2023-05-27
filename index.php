@@ -49,6 +49,35 @@
     <main>
         <section>
           <h2 id="psgs-aereas">Passagens aéreas disponíveis</h2>
+          <div class="bloco">
+            <article>
+                <h2 id="psgs-aereas">Passagens aéreas</h2>
+                <form action="" method="POST">
+                    
+                    <label><span>Qual a sua origem? </span>
+                        <input type="text" name="origem" required>
+                    </label>
+                    <label><span>Qual o seu destino?</span>
+                        <input type="text" name="destino" required>
+                    </label>
+                    <label><span>Quando deseja ir?</span>
+                        <input type="date" name="ida" required>
+                    </label>
+                    <label> <span>Quando volta?</span>
+                        <input type="date" name="volta" required>
+                    </label>
+                    <label><span>Selecione uma classe</span>
+                        <select name="classes">
+                            <option></option>
+                            <option value="economica">Econômica</option>
+                            <option value="premiumec">Premium Economy</option>
+                            <option value="executiva">Executiva/Business</option>
+                            <option value="primeira">Primeira Classe</option>
+                        </select>
+                    </label>
+
+                    <a href="#" class="botao-vermelho"><img src="img/icon-buscar.png" alt="icone-busca" class="icon">Buscar</a>
+                </form>
             <div class="conteudo">
                         <?php foreach($viagens as $i => $viagem){ ?>
                 <div class="card">
